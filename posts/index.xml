@@ -1,0 +1,24 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>All Posts - 欢迎来到我的Blog网站!</title>
+        <link>https://xcwccw.github.io/posts/</link>
+        <description>All Posts | 欢迎来到我的Blog网站!</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>2795686538@qq.com (xcwccw)</managingEditor>
+            <webMaster>2795686538@qq.com (xcwccw)</webMaster><lastBuildDate>Sun, 03 Sep 2023 17:12:09 &#43;0800</lastBuildDate><atom:link href="https://xcwccw.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>First</title>
+    <link>https://xcwccw.github.io/first/</link>
+    <pubDate>Sun, 03 Sep 2023 17:12:09 &#43;0800</pubDate>
+    <author>xcwccw</author>
+    <guid>https://xcwccw.github.io/first/</guid>
+    <description><![CDATA[hello world ]]></description>
+</item>
+<item>
+    <title></title>
+    <link>https://xcwccw.github.io/second/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>xcwccw</author>
+    <guid>https://xcwccw.github.io/second/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
+</rss>
