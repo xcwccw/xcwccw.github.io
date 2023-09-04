@@ -1,8 +1,7 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Categories - Category - 欢迎来到我的Blog网站!</title>
+        <title>Categories - Category - xcw&#39;s Blog</title>
         <link>https://xcwccw.github.io/categories/</link>
-        <description>Categories - Category - 欢迎来到我的Blog网站!</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>2795686538@qq.com (xcwccw)</managingEditor>
-            <webMaster>2795686538@qq.com (xcwccw)</webMaster><atom:link href="https://xcwccw.github.io/categories/" rel="self" type="application/rss+xml" /></channel>
+        <description>Categories - Category - xcw&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><atom:link href="https://xcwccw.github.io/categories/" rel="self" type="application/rss+xml" /></channel>
 </rss>
