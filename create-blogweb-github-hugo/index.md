@@ -1,4 +1,4 @@
-# Create BlogWeb Github Hugo
+# "github+hugo" 搭建博客网站
 
 
 # github+Hugo搭建博客
@@ -14,15 +14,19 @@
 
 ## 2.创建站点
 
-```
+{{< admonition type=tip title="This is a tip" open=false >}}
+
 站点的本质其实就是"装有很多其它文件夹/文件的"文件夹
 
-# 创建站点的指令
+创建站点的指令
+
 $ hugo new site 站点名(比如说:MyBlog)
 
-# 进入站点
+//进入站点
+
 $ cd MyBlog
-```
+
+{{< /admonition >}}
 
 
 
