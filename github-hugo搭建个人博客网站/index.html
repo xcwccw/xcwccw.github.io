@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>&#34;github&#43;hugo&#34; 搭建个人博客网站 - xcw&#39;s Blog</title><meta name="Description" content=""><meta property="og:title" content="&#34;github&#43;hugo&#34; 搭建个人博客网站" />
+<meta property="og:description" content="github&#43;Hugo搭建博客 1.安装 前往Releases · gohugoio/hugo (github.com)下载对应版本的hugo，建议下载扩展版，因为很多主题的" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xcwccw.github.io/github-hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/" /><meta property="og:image" content="https://xcwccw.github.io/images/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-09-04T19:35:25+08:00" />
+<meta property="article:modified_time" content="2023-09-04T19:35:25+08:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://xcwccw.github.io/images/logo.png"/>
+
+<meta name="twitter:title" content="&#34;github&#43;hugo&#34; 搭建个人博客网站"/>
+<meta name="twitter:description" content="github&#43;Hugo搭建博客 1.安装 前往Releases · gohugoio/hugo (github.com)下载对应版本的hugo，建议下载扩展版，因为很多主题的"/>
+<meta name="application-name" content="我的网站">
+<meta name="apple-mobile-web-app-title" content="我的网站"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://xcwccw.github.io/github-hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/" /><link rel="next" href="https://xcwccw.github.io/%E4%B8%BB%E9%A2%98%E6%96%87%E6%A1%A3-%E5%AE%9E%E7%94%A8%E7%9A%84-shortcodes/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "\"github+hugo\" 搭建个人博客网站",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/xcwccw.github.io\/github-hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99\/"
+        },"genre": "posts","keywords": "github, hugo","wordcount":  2004 ,
+        "url": "https:\/\/xcwccw.github.io\/github-hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99\/","datePublished": "2023-09-04T19:35:25+08:00","dateModified": "2023-09-04T19:35:25+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "xcwccw"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="xcw&#39;s Blog"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/icon/home.png"
+        data-srcset="/images/icon/home.png, /images/icon/home.png 1.5x, /images/icon/home.png 2x"
+        data-sizes="auto"
+        alt="/images/icon/home.png"
+        title="/images/icon/home.png" />Home</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="xcw&#39;s Blog"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/icon/home.png"
+        data-srcset="/images/icon/home.png, /images/icon/home.png 1.5x, /images/icon/home.png 2x"
+        data-sizes="auto"
+        alt="/images/icon/home.png"
+        title="/images/icon/home.png" />Home</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">"github+hugo" 搭建个人博客网站</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>xcwccw</a></span>&nbsp;<span class="post-category">included in <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>博客搭建</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-09-04">2023-09-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;2004 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1安装">1.安装</a></li>
+    <li><a href="#2创建站点">2.创建站点</a></li>
+    <li><a href="#3设置主题">3.设置主题</a></li>
+    <li><a href="#4创建文章">4.创建文章</a></li>
+    <li><a href="#5本地启动hugo服务">5.本地启动hugo服务</a></li>
+    <li><a href="#6托管到github上">6.托管到github上</a></li>
+    <li><a href="#7配置评论系统">7.配置评论系统</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="githubhugo搭建博客">github+Hugo搭建博客</h1>
+<h2 id="1安装">1.安装</h2>
+<ol>
+<li>前往<a href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener noreffer ">Releases · gohugoio/hugo (github.com)</a>下载对应版本的hugo，建议下载扩展版，因为很多主题的内容需要基于扩展版之上才有用，不是扩展版会报错。</li>
+<li>将下载好的hugo压缩包解压至指定文件夹中，解压路径中不要出现中文和空格。</li>
+<li>将解压出来的hugo.exe的存放路径添加至环境变量。</li>
+<li>验证：打开cmd，运行hugo help，如果屏幕输出了hugo相关的命令指导说明安装成功！</li>
+</ol>
+<h2 id="2创建站点">2.创建站点</h2>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>站点的本质其实就是&quot;装有很多其它文件夹/文件的&quot;文件夹</p>
+<p>创建站点的指令</p>
+<p>$ hugo new site 站点名(比如说:MyBlog)</p>
+<p>//进入站点</p>
+<p>$ cd MyBlog</p>
+</div>
+        </div>
+    </div>
+<h2 id="3设置主题">3.设置主题</h2>
+<ol>
+<li>下载主题：<a href="https://themes.gohugo.io/" target="_blank" rel="noopener noreffer ">Complete List | Hugo Themes (gohugo.io)</a>，先去挑选一个自己喜欢的主题，然后打开，点击黄色的Downlord按钮，就会跳转到该主题对应的github项目处，然后我们复制该主题github项目对应的https下载网址，然后执行以下操作：</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># 先进入站点根目录下的themes文件夹中(此前我们已经进入了站点文件夹中，已经处于站点根目录下)
+</span></span><span class="line"><span class="cl">$ cd themes
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 下载主题对应的github项目到themes文件夹下
+</span></span><span class="line"><span class="cl">$ git clone 主题对应的github项目的https下载路径
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>对站点根目录下的配置文件(hugo.toml)进行配置：</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># 原本就有的：
+</span></span><span class="line"><span class="cl">baseURL = &#39;https://example.org/&#39; 我们先进行本地部署，所以这个可以先不修改
+</span></span><span class="line"><span class="cl">languageCode = &#39;en-us&#39;
+</span></span><span class="line"><span class="cl">title = &#39;My New Hugo Site&#39;
+</span></span><span class="line"><span class="cl"># 额外添加的
+</span></span><span class="line"><span class="cl">theme = &#34;主题名&#34; # 就是themes文件夹中下载好的主题的文件夹名(比如&#34;LoveIt&#34;)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="4创建文章">4.创建文章</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># 创建一个about页面
+</span></span><span class="line"><span class="cl"># about.md自动生成到了content/about.md
+</span></span><span class="line"><span class="cl">$ hugo new about.md 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 创建一个first页面，放到post目录下，方便之后聚合页面
+</span></span><span class="line"><span class="cl"># first.md自动生成到了content/post/first.md
+</span></span><span class="line"><span class="cl">$ hugo new post/first.md
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 创建的md文件中的内容
+</span></span><span class="line"><span class="cl">+++
+</span></span><span class="line"><span class="cl">date = &#34;2023-9-3T18:36:54-07:00&#34;
+</span></span><span class="line"><span class="cl">draft = true # 是否为草稿内容
+</span></span><span class="line"><span class="cl">title = &#34;about&#34;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">+++
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">正文内容
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="5本地启动hugo服务">5.本地启动hugo服务</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># --themes=hyde 指定构建网页使用的主题
+</span></span><span class="line"><span class="cl"># --BuildDrafts 指定草稿也会被构建
+</span></span><span class="line"><span class="cl">$ hugo server --themes=hyde --BuildDrafts
+</span></span><span class="line"><span class="cl">$ hugo serve -e production --本地服务开启评论系统
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 然后打开其指定的本地网址即可访问博客了
+</span></span><span class="line"><span class="cl">http://localhost:1313/
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="6托管到github上">6.托管到github上</h2>
+<ul>
+<li>警告：github上使用的博客托管仓库，即：用户名.github.io这个仓库，必须是全新的，如果之间用于其它框架搭建博客需要删除重新创建，建议这样做，否则后期部署可能会出现奇怪的错误</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># 在站点根目录下进行操作:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 生成对应的public文件夹，里面装的就是要发布的博客网页(md-&gt;html)
+</span></span><span class="line"><span class="cl">$ hugo
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 进入public文件夹
+</span></span><span class="line"><span class="cl">$ cd public
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 将public文件夹作为一个本地git仓库，先初始化本地git仓库
+</span></span><span class="line"><span class="cl">$ git init 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 将public问价夹下的所有文件追加到本地仓库
+</span></span><span class="line"><span class="cl">$ git add . 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 将上面执行的add操作进行提交
+</span></span><span class="line"><span class="cl">$ git commit -m &#34;first commit&#34; 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 将本地仓库和远程仓库相互关联
+</span></span><span class="line"><span class="cl">$ git remote add origin https://github.com/xcwccw/xcwccw.github.io.git 
+</span></span><span class="line"><span class="cl"># 如果关联到错误的地址:
+</span></span><span class="line"><span class="cl">$ git remote -v # 查看当前关联的远程仓库地址
+</span></span><span class="line"><span class="cl">$ git remote rm origin # 移除当前关联的远程仓库地址
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 将本地仓库的文件推送到远程仓库进行托管，不行用下面这个
+</span></span><span class="line"><span class="cl">$ git push -u origin master 
+</span></span><span class="line"><span class="cl"># 强制推送
+</span></span><span class="line"><span class="cl">$ git push -f origin master 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-- 之后要写了新的博客要更新内容只需要执行以下操作即可(可以写个脚本)
+</span></span><span class="line"><span class="cl">$ hugo
+</span></span><span class="line"><span class="cl">$ cd public
+</span></span><span class="line"><span class="cl">$ git add .
+</span></span><span class="line"><span class="cl">$ git commit -m &#34;first commit&#34;
+</span></span><span class="line"><span class="cl">$ git push -u origin master
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="7配置评论系统">7.配置评论系统</h2>
+<ol>
+<li>
+<p>创建一个公开的 Github 仓库</p>
+</li>
+<li>
+<p>找到<code>Settings -&gt; General -&gt; Features -&gt; Discussions</code> 勾选，为仓库启动 Discussions 功能</p>
+</li>
+<li>
+<p>给配置好的仓库安装Giscus，点击<a href="https://github.com/apps/giscus" target="_blank" rel="noopener noreffer ">GitHub Apps - giscus</a>，点击Install</p>
+</li>
+<li>
+<p>点击Install后，要选择一个git仓库进行安装</p>
+</li>
+<li>
+<p>接下来，我们只需到 Giscus 官网获取配置信息，然后将配置信息填到 Hugo 的<a href="https://www.zhihu.com/search?q=%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7b%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3115481653%7d" target="_blank" rel="noopener noreffer ">配置文件</a>中即可。但是由于主题的不同，所以配置文件的填写也不同，这里以 LoveIt 为例。</p>
+</li>
+<li>
+<p>来到 <a href="https://link.zhihu.com/?target=https%3A//giscus.app/zh-CN" target="_blank" rel="noopener noreffer ">Giscus 官网</a>；填写你的git仓库名：xcwccw/Giscus；选择页面与嵌入的discussion之间的映射关系为Discussion的标题包含页面的pathname项；选择 Discussion 分类，我们选择 Announcements 类型即可，官方也是这样推荐的，因为这样便于管理；其他选项默认，我们往下滑，找到配置文件，我们要记下<code>data-repo</code>，<code>data-repo-id</code>，<code>data-category</code>，<code>data-category-id</code>，<code>data-mapping</code>这几个值。</p>
+</li>
+<li>
+<p>打开配置文件<code>config.toml</code>，找到<code># 评论系统设置</code>的第一个 enable 参量，将其改为 true</p>
+</li>
+<li>
+<p>找到<code># giscus comment 评论系统设置</code>,并把其配置按照下面代码块修改。</p>
+</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="p">[</span><span class="l">params.page.comment.giscus]   </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># 你可以参考官方文档来使用下列配置   </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">enable = true   </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">repo = &#34;&lt;your_repo&gt;&#34;   </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">repoId = &#34;&lt;your_repoId&gt;&#34;   </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">category = &#34;&lt;your_category&gt;&#34;   </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">categoryId = &#34;&lt;your_categoryId&gt;&#34;   </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># &lt;your_repo&gt; 对应官网的 data-repo   </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># &lt;your_repoId&gt; 对应官网的 data-repo-id   </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># &lt;your_category&gt; 对应官网的 data-category   </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># &lt;your_categoryId&gt; 对应官网的 data-category-id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># 为空时自动适配当前主题 i18n 配置   </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">lang = &#34;zh-CN&#34;   </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">mapping = &#34;&lt;your_mapping&gt;&#34;   </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># &lt;your_mapping&gt; 对应官网的 data-mapping   </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">reactionsEnabled = &#34;1&#34;   </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">emitMetadata = &#34;0&#34;   </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">inputPosition = &#34;bottom&#34;   </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">lazyLoading = false   </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">lightTheme = &#34;light&#34;   </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">darkTheme = &#34;dark_dimmed&#34;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="9">
+<li>配置好后,就可以开启 Giscus 评论系统了。</li>
+</ol>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-09-04</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/github-hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://xcwccw.github.io/github-hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/" data-title="&#34;github&#43;hugo&#34; 搭建个人博客网站" data-hashtags="github,hugo"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://xcwccw.github.io/github-hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/" data-hashtag="github"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://xcwccw.github.io/github-hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/" data-title="&#34;github&#43;hugo&#34; 搭建个人博客网站"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://xcwccw.github.io/github-hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/" data-title="&#34;github&#43;hugo&#34; 搭建个人博客网站"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://xcwccw.github.io/github-hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/" data-title="&#34;github&#43;hugo&#34; 搭建个人博客网站"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/github/">github</a>,&nbsp;<a href="/tags/hugo/">hugo</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+            <a href="/%E4%B8%BB%E9%A2%98%E6%96%87%E6%A1%A3-%E5%AE%9E%E7%94%A8%E7%9A%84-shortcodes/" class="next" rel="next" title="LoveIt主题文档 - 实用的 Shortcodes">LoveIt主题文档 - 实用的 Shortcodes<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="giscus" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://giscus.app">Giscus</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.118.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xcwccw</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/mhchem.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{"giscus":{"category":"Announcements","categoryId":"DIC_kwDOKPJ4k84CZEfu","darkTheme":"dark_dimmed","emitMetadata":"0","inputPosition":"bottom","lang":"zh-CN","lazyLoading":false,"lightTheme":"light","mapping":"pathname","reactionsEnabled":"1","repo":"xcwccw/Giscus","repoId":"R_kgDOKPJ4kw"}},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

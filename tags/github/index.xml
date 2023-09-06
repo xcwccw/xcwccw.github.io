@@ -4,11 +4,11 @@
         <link>https://xcwccw.github.io/tags/github/</link>
         <description>github - Tag - xcw&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 04 Sep 2023 19:35:25 &#43;0800</lastBuildDate><atom:link href="https://xcwccw.github.io/tags/github/" rel="self" type="application/rss+xml" /><item>
-    <title>&#34;github&#43;hugo&#34; 搭建博客网站</title>
-    <link>https://xcwccw.github.io/create-blogweb-github-hugo/</link>
+    <title>&#34;github&#43;hugo&#34; 搭建个人博客网站</title>
+    <link>https://xcwccw.github.io/github-hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</link>
     <pubDate>Mon, 04 Sep 2023 19:35:25 &#43;0800</pubDate>
     <author>xcwccw</author>
-    <guid>https://xcwccw.github.io/create-blogweb-github-hugo/</guid>
+    <guid>https://xcwccw.github.io/github-hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</guid>
     <description><![CDATA[github+Hugo搭建博客 1.安装 前往Releases · gohugoio/hugo (github.com)下载对应版本的hugo，建议下载扩展版，因为很多主题的]]></description>
 </item>
 </channel>
